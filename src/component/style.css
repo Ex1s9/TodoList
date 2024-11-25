@@ -1,0 +1,101 @@
+.input {
+  display: flex;
+  width: 70%;
+  position: relative;
+  align-items: center;
+}
+
+.input_box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+.input_box:focus {
+  outline: none;
+}
+
+.input_submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(39, 35, 35);
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+}
+
+.input_submit:hover {
+  background-color: black;
+}
+
+.input_submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+.todos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.todos_single {
+  display: flex;
+  width: 29,5%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fphotogora.ru%2Fbackground%2Fpaper-back%2Fbd-12950-a4-background-paper-2-7x46-m-super-white%2F&psig=AOvVaw3o4KA1IyxVUofh0uMFZ34P&ust=1732384720553000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjiy5DC8IkDFQAAAAAdAAAAABAE");
+}
+
+.todos_single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.todos_single--text:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todos_single {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .input {
+    width: 95%;
+  }
+  .todos {
+    width: 95%;
+  }
+  .todos_single {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .todos_single {
+    width: 100%;
+  }
+}
